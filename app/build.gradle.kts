@@ -1,30 +1,42 @@
 plugins {
     id("com.android.application")
     kotlin("android")
-}
-
-repositories {
-    google()
-    mavenCentral()
+    kotlin("kapt")
 }
 
 android {
-    compileSdk = 31
+
+    compileSdk = Dependencies.Versions.androidCompileSdkVersion
 
     defaultConfig {
+        multiDexEnabled = true
         applicationId = "com.annexflow.calculatorannex"
-        minSdk = 21
-        targetSdk = 31
-        versionCode = 1
-        versionName = "1.0"
+        minSdk = Dependencies.Versions.minSdkVersion
+        targetSdk = Dependencies.Versions.targetSdkVersion
+        versionCode = Dependencies.Versions.appVersionCode
+        versionName = Dependencies.generateVersionName()
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
-        release {
+        debug {
             isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            isShrinkResources = false
+            isDebuggable = true
+            applicationIdSuffix = ".debug"
+            versionNameSuffix = "-DEBUG"
+            signingConfig = signingConfigs.getByName("debug")
+        }
+        release {
+            isMinifyEnabled = true
+            isShrinkResources = true
+            setProguardFiles(
+                listOf(
+                    getDefaultProguardFile("proguard-android-optimize.txt"),
+                    "proguard-rules.pro"
+                )
+            )
         }
     }
 
@@ -42,13 +54,23 @@ android {
 }
 
 dependencies {
-    implementation(Dependencies.AndroidXCore.core)
+    //Android
+    implementation(Dependencies.Libraries.android_core_ktx)
+    implementation(Dependencies.Libraries.constraintLayout)
+    implementation(Dependencies.Libraries.appcompat)
+    implementation(Dependencies.Libraries.material)
+    implementation(Dependencies.Libraries.lifecycle_livedata_ktx)
+    implementation(Dependencies.Libraries.lifecycle_runtime_ktx)
+    implementation(Dependencies.Libraries.lifecycle_common)
+    implementation(Dependencies.Libraries.lifecycle_viewmodel_ktx)
+    implementation(Dependencies.Libraries.fragment_ktx)
+    implementation(Dependencies.Libraries.recyclerview)
+    //UI
+    implementation(Dependencies.Libraries.glide)
+    kapt(Dependencies.Libraries.glide_compiler)
+    implementation(Dependencies.Libraries.lottie)
 
-    implementation(Dependencies.AndroidXConstraintLayout.constraintLayout)
-    implementation(Dependencies.AndroidXAppCompat.appcompat)
-    implementation(Dependencies.AndroidMaterial.material)
-
-    testImplementation(Dependencies.JUnit.junit)
-    androidTestImplementation(Dependencies.JUnit.junitExt)
-    androidTestImplementation(Dependencies.Espresso.core)
+    testImplementation(Dependencies.Libraries.junit)
+    androidTestImplementation(Dependencies.Libraries.test_ext_junit)
+    androidTestImplementation(Dependencies.Libraries.espresso_core)
 }
