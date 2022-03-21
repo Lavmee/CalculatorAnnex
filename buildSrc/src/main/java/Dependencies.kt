@@ -17,6 +17,7 @@ object Dependencies {
         const val recyclerviewVersion = "1.2.1"
         const val lottieVersion = "4.2.2"
         const val glideVersion = "4.13.0"
+        const val navVersion = "2.4.1"
 
         const val junitVersion = "4.13.2"
         const val testExtJunitVersion = "1.1.3"
@@ -30,6 +31,10 @@ object Dependencies {
             "androidx.constraintlayout:constraintlayout:${Versions.constraintLayoutVersion}"
         const val material =
             "com.google.android.material:material:${Versions.materialVersion}"
+        const val navigationFragment =
+            "androidx.navigation:navigation-fragment-ktx:${Versions.navVersion}"
+        const val navigationUI =
+            "androidx.navigation:navigation-ui-ktx:${Versions.navVersion}"
         const val android_core_ktx =
             "androidx.core:core-ktx:${Versions.coreKtxVersion}"
         const val lifecycle_livedata_ktx =
