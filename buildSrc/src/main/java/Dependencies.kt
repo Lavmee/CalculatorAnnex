@@ -6,7 +6,7 @@ object Dependencies {
         const val appVersionCode = 1
         const val androidCompileSdkVersion = 31
         const val targetSdkVersion = 31
-        const val minSdkVersion = 21
+        const val minSdkVersion = 23
 
         const val supportVersion = "1.4.1"
         const val constraintLayoutVersion = "2.1.3"
