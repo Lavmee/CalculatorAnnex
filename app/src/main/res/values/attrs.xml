@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="backgroundColor" format="color"/>
+
+    <attr name="backgroundKeyboardColor" format="color"/>
+
+    <attr name="backgroundKeyColor" format="color"/>
+
+    <attr name="keyColorPrimary" format="color"/>
+    <attr name="keyColorSecondary" format="color"/>
+    <attr name="keyColorTertiary" format="color"/>
+</resources>
