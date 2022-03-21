@@ -1,16 +1,27 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.CalculatorAnnex" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.CalculatorAnnex" parent="Theme.Material3.Dark.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimary">@color/darkGrey</item>
+        <item name="colorPrimaryVariant">@color/darkGrey</item>
+        <item name="colorOnPrimary">@color/darkGrey</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorSecondary">@color/darkGrey</item>
+        <item name="colorSecondaryVariant">@color/darkGrey</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+        <!-- Navigation Bar color. -->
+        <item name="android:navigationBarColor">@color/darkGrey</item>
+        <!-- Background color. -->
+        <item name="backgroundColor">@color/darkGrey</item>
+        <!-- Background Keyboard color. -->
+        <item name="backgroundKeyboardColor">@color/lightDarkGrey</item>
+        <!-- Background Key color. -->
+        <item name="backgroundKeyColor">@color/darkGrey</item>
+        <!-- Key color. -->
+        <item name="keyColorPrimary">@color/white</item>
+        <item name="keyColorSecondary">@color/cyan</item>
+        <item name="keyColorTertiary">@color/peach</item>
     </style>
 </resources>
