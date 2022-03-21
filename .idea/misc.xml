@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/splab/Desktop/CalculatorAnnex/app/src/main/res/drawable/background_rounded.xml" value="0.2525" />
+        <entry key="..\:/Users/splab/Desktop/CalculatorAnnex/app/src/main/res/drawable/background_rounded_top.xml" value="0.196" />
+        <entry key="..\:/Users/splab/Desktop/CalculatorAnnex/app/src/main/res/drawable/riple_foreground_rounded.xml" value="0.2525" />
         <entry key="..\:/Users/splab/Desktop/CalculatorAnnex/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/splab/Desktop/CalculatorAnnex/app/src/main/res/layout/fragment_calculator.xml" value="0.19615384615384615" />
+        <entry key="..\:/Users/splab/Desktop/CalculatorAnnex/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.196" />
+        <entry key="..\:/Users/splab/Desktop/CalculatorAnnex/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.196" />
       </map>
     </option>
   </component>
