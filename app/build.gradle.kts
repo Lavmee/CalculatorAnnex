@@ -65,6 +65,8 @@ dependencies {
     implementation(Dependencies.Libraries.lifecycle_viewmodel_ktx)
     implementation(Dependencies.Libraries.fragment_ktx)
     implementation(Dependencies.Libraries.recyclerview)
+    implementation(Dependencies.Libraries.navigationFragment)
+    implementation(Dependencies.Libraries.navigationUI)
     //UI
     implementation(Dependencies.Libraries.glide)
     kapt(Dependencies.Libraries.glide_compiler)
